@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* 3D Ball Violent Shake Sequence */
+  @keyframes ball-shake {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    10% {
+      transform: translate(-14px, -8px) rotate(-6deg) scale(0.98);
+    }
+    20% {
+      transform: translate(16px, 10px) rotate(8deg) scale(1.02);
+    }
+    30% {
+      transform: translate(-18px, 6px) rotate(-9deg) scale(0.97);
+    }
+    40% {
+      transform: translate(14px, -12px) rotate(7deg) scale(1.01);
+    }
+    50% {
+      transform: translate(-12px, -6px) rotate(-6deg) scale(0.99);
+    }
+    60% {
+      transform: translate(10px, 8px) rotate(5deg) scale(1.01);
+    }
+    70% {
+      transform: translate(-8px, -4px) rotate(-4deg) scale(0.99);
+    }
+    80% {
+      transform: translate(6px, 4px) rotate(3deg) scale(1);
+    }
+    90% {
+      transform: translate(-3px, -2px) rotate(-1deg) scale(1);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+  }
+
+  /* Gentle Buoyant Float for the Settled Die */
+  @keyframes gentle-float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-3px) rotate(0.8deg);
+    }
+  }
+
+  .animate-ball-shake {
+    animation: ball-shake 1.1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+
+  .animate-gentle-float {
+    animation: gentle-float 4s ease-in-out infinite;
+  }
+}

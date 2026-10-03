@@ -1,0 +1,6 @@
+{
+  "name": "Magic 8-Ball PWA",
+  "description": "A classic, high-performance Magic 8-Ball Progressive Web App with 16-frame sprite animations, viscous liquid viewport effects, motion shake detection, and offline IndexedDB support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
